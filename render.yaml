@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-replit-project
+    env: node
+    plan: free
+    startCommand: "pnpm run start"
