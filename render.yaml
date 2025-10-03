@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: my-replit-project
+    name: aterbot
     env: node
     plan: free
+    buildCommand: "pnpm install"
     startCommand: "pnpm run start"
