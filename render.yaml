@@ -3,4 +3,5 @@ services:
     name: aterbot
     env: node
     plan: free
-    startCommand: "pnpm run start:all"
+    buildCommand: "pnpm run build"
+    startCommand: "pnpm run start"
