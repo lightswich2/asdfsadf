@@ -1,0 +1,28 @@
+hidden = [".config", "pnpm-lock.yaml", "tsconfig.json", ".gitignore"]
+compile = "clear"
+run = "pnpm run start"
+modules = ["nodejs-20"]
+
+[gitHubImport]
+	requiredFiles = [".replit", "replit.nix", ".config", "package.json", "pnpm-lock.yaml"]
+
+
+
+[nix]
+	channel = "stable-23_05"
+
+
+[packager]
+	language = "nodejs-pnpm"
+
+	[packager.features]
+		packageSearch = true
+		guessImports = true
+		enabledForHosting = false
+
+[[ports]]
+localPort = 5500
+externalPort = 80
+
+[agent]
+expertMode = true
