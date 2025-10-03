@@ -6,9 +6,12 @@
 	"scripts": {
 		"start": "npx tsx ./src/index.ts",
 		"dev": "node --inspect --loader tsx ./src/index.ts"
+		"start:all": "pnpm run build && pnpm run start"
+
 	},
 	"dependencies": {
 		"mineflayer": "^4.33.0",
 		"tsx": "^4.20.6"
+		
 	}
 }
